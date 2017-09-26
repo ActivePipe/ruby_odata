@@ -18,15 +18,15 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
 
   s.add_dependency("addressable", ">= 2.3.4")
-  s.add_dependency("i18n", "~> 0.7.0")
+  s.add_dependency("i18n", ">= 0.7.0")
   s.add_dependency("activesupport", ">= 3.0.0")
-  s.add_dependency("excon", "~> 0.45.3")
-  s.add_dependency("faraday_middleware", "~> 0.10.0")
-  s.add_dependency("faraday", "~> 0.9.1")
+  s.add_dependency("excon", ">= 0.45.3")
+  s.add_dependency("faraday_middleware", ">= 0.10.0")
+  s.add_dependency("faraday", ">= 0.9.1")
   s.add_dependency("nokogiri", ">= 1.4.2")
 
   s.add_development_dependency("rake", "0.9.2")
-  s.add_development_dependency("rspec", "~> 2.11.0")
+  s.add_development_dependency("rspec", ">= 2.11.0")
   s.add_development_dependency("minitest", "~> 4.0")
   s.add_development_dependency("cucumber", "~> 1.2.1")
   s.add_development_dependency("pickle", "~> 0.4.11")
@@ -35,8 +35,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency("guard", "~> 1.3.0")
   s.add_development_dependency("guard-rspec", "~> 1.2.1")
   s.add_development_dependency("guard-cucumber", "~> 1.2.0")
-  s.add_development_dependency("vcr", "~> 2.5.0")
-  s.add_development_dependency("simplecov", "~> 0.7.1")
+  s.add_development_dependency("vcr", ">= 2.5.0")
+  s.add_development_dependency("simplecov", ">= 0.7.1")
   s.add_development_dependency("coveralls", "~> 0.6.7")
 
   s.files         = `git ls-files`.split("\n")

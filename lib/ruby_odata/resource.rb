@@ -8,10 +8,10 @@ module OData
       @options = options.is_a?(Hash) ? options : { user: options, password: backwards_compatibility }
 
       @conn = Faraday.new(url: url, ssl: { verify: verify_ssl }) do |faraday|
-        faraday.request(:oauth2, access_token) if access_token
+        faraday.request(:oauth2, access_token, token_type: 'bearer') if access_token
 
         faraday.use      :gzip
-        faraday.response :raise_error
+        faraday.response :logger # :raise_error
         faraday.adapter  :excon
 
         faraday.options.timeout      = timeout if timeout
